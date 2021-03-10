@@ -1,3 +1,8 @@
-PI = ...
+PI = 3.14
 
-area = ...
+r = float(input('Введите радиус: '))
+
+area = PI * (r ** 2)
+area = round(area, 3)
+
+print(area)

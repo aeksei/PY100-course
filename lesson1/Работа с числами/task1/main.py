@@ -1,6 +1,6 @@
-length = ...
-width = ...
+length = int(input('Длина'))
+width = int(input('Ширина'))
 
-perimeter = ...
+perimeter = (length + width) * 2
 
-print()
+print(perimeter)
