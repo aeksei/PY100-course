@@ -1,0 +1,1447 @@
+{
+  "environment" : "unittest",
+  "summary" : "Python course.\nCreated: Mar 1, 2021, 11:16:13 AM.",
+  "title" : "PY100-course",
+  "programming_language" : "Python",
+  "language" : "en",
+  "course_type" : "PyCharm",
+  "items" : [
+    {
+      "title" : "lesson1",
+      "items" : [
+        {
+          "title" : "Работа с числами",
+          "task_list" : [
+            {
+              "name" : "Введение",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "name = ...\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "## Ввод данных с клавиатуры в консоль. \nДанное действие осуществляется с помощью функции `input()`. \n\nЕсли во время выполнения встречается эта функция, то программа переходит в режим ожидания, \nпозволяя пользователю ввести данные. \n\nПосле нажатия клавиши `Enter`, введенный текст передается в программу в виде значения, которое возвращает командой `input()`.\n\n```python\n# пользователю предлагается ввести данные\n# после нажатия Enter они сохранятся в переменную text \ntext = input()\n```\n\nКоманда `input()` также предоставляет возможность выводить подсказки к тому, что программа хочет от него увидеть. \nДля этого в круглых скобках после слова `input` необходимо ввести текст-подсказку, \nне забывая поставить кавычки вокруг этого текста.\n\n```python\nname = input(\"Ввведите ваше имя:\")\n```\n\n\nСписок команд для работы с числами:\n- type() - получить тип переменной\n- round() - округлить число до указанного количества знаков после зяпятой\n- print() - вывести значение переменной\n- input() - получить значение переменной\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "theory"
+            },
+            {
+              "name" : "task1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "length = ...\nwidth = ...\n\nperimeter = ...\n\nprint()\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "75\n"
+                }
+              },
+              "description_text" : "Найти периметр прямоугольника со сторонами 5 и 15. \n\nОтвет вывести с помощью функции `print()`",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "PI = ...\n\narea = ...\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Найти площадь круга. Радиус круга вводится с клавиатуры. Ответ округлить до 3 знака после зяпятой.\n\nПлощадь круга \n```python\narea = PI * r ^ 2\n```\n\nКонстанту `PI` считать равной 3.14.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "task3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Вычислите и выведите на экран примерное число прожитых человеком дней (без учета високосных лет), \nа год рождения и текущий год запрашиваются у пользователя вашей программы.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task4",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "\n"
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Информационный объем дискеты равен 1,44 Мбайта. \n\nРассчитайте и выведите на экран сколько книг может поместиться на дискету, \nесли для хранения кода одного символа нужен 1 байт. \n\nКоличество страниц в книге, число строк на странице и количество символов в строке запрашивается у пользователя.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "task5",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дано двузначное число. \n\nНайти: \n- а число десятков в нем; \n- б) число единиц в нем; \n- в) сумму его цифр; \n- г) произведение его цифр.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "choiceOptions" : [
+                {
+                  "text" : "TypeError",
+                  "status" : "CORRECT"
+                },
+                {
+                  "text" : "IndexError",
+                  "status" : "INCORRECT"
+                }
+              ],
+              "isMultipleChoice" : false,
+              "name" : "homework1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : "int_ = 5\nstr_ = 'Hello, World'\n\n...\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Попробуйте сложить число и строку и укажите, какого типа выводится ошибка.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "choice"
+            },
+            {
+              "name" : "homework2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Рассчитайте количество часов, которые вы тратите на выполнение домашнего задания в день, \nесли среднее количество предметов в день и среднее время (в минутах), затрачиваемое на подготовку \nко всем предметам вводятся c клавиатуры.\n\nОтвет округлить до 2 знаков после запятой.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "homework3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Скорость передачи данных по локальной сети запрашивается у пользователя и измеряется в битах секунду. \n\nУченик качал игру Т минут (время запрашивается у пользователя). Рассчитайте и выведите на экран размер файла (в Гбайтах), который скачал ученик и сколько денег придется заплатить ему за трафик, если первый Гбайт не оплачивается, а все то, что сверху по у рублей за Гбайт. (запрашивается у пользователя).",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "homework4",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Известна ставка процента подоходного налога 13%, которая не меняется. \nРазмер оклад (зарплата) запрашивается у пользователя.\n\nОпределить размер подоходного налога и сумму, получаемую на руки, и вывести их на экран.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "homework5",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Возвести число A в целую степень N.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Списки",
+          "task_list" : [
+            {
+              "name" : "task1_Введение",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дано трехзначное число.\n* Получить список цифр числа N\n* Найти сумму всех цифр\n* Найти сумму всех четных чисел\n* Найти количество цифр\n* Найти минимальную (максимальную) цифру числа\n* Получить список всех цифр стоящих на нечетных (четных) местах. Например, 123 -&gt; [1, 3]\n* Найти разность первой и последней цифры\n* Найти минимальную цифру числа, и указать на каком месте она стоит",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "theory"
+            },
+            {
+              "name" : "task2",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти сумму его чисел.\n\nРаспечатать её.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти его длину.\n\nРаспечатать её.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task4",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти среднее арифметическое этих чисел.\n\nРаспечатать его.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task5",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти минимальный элемент среди них.\n\nРаспечатать его.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task6",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти минимальный элемент среди них.\n\nРаспечатать индекс первого вхождения этого элемента в этот список.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task7",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Добавить в конец списка первый элемент данного списка с помощью метода `append`.\n\nРаспечатать получившийся список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task8",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дано два списка. С помощью метода `extend` добавить элементы второго списка к первому.\n\nРезультирующий список распечатать.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task9",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дано два списка. С помощью оператора сложения соединить два списка.\n\nРезультирующий список распечатать.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task10",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Составить список, который будет состоять из:\n- 20 нулей;\n- 50 единиц;\n- 30 двоек.\n\nС помощью метода `count` найти количество единиц в данном списке.\n ",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task11",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. С помощью методов `pop()` и `insert()` перенести последний элемент в начало списка.\n\nРаспечать получившийся список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task12",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. С помощью методов `pop()` и `insert()` перенести первый элемент в конец списка.\n\nРаспечать получившийся список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти минимальный элемент среди них.\n\nРаспечатать его.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework2",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Добавить в конец списка первый элемент данного списка с помощью оператора сложения.\n\nРаспечатать получившийся список.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework3",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Ввести с клавиатуры три числа. \n\nВывести на экран максимальное из этих чисел.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Индексация",
+          "task_list" : [
+            {
+              "name" : "task1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Распечатать элементы начиная со второго и до последнего.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task2",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Распечатать элементы начиная со второго и до четвертого включительно.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Распечатать элементы начиная с первого и до третьего включительно.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task4",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список. Распечатать элементы списка в обратном порядке с помощью индексации.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "choiceOptions" : [
+                {
+                  "text" : "TypeError",
+                  "status" : "INCORRECT"
+                },
+                {
+                  "text" : "IndexError",
+                  "status" : "CORRECT"
+                }
+              ],
+              "isMultipleChoice" : false,
+              "name" : "task5",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Попробуйте вывести значение по несуществующему индексу, какого типа выводится ошибка.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "choice"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "range",
+          "task_list" : [
+            {
+              "name" : "task1_Введение",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами -10 до 10 включительно. Числа должны располагаться в порядке убывания.\n\nРаспечатайте этот список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "theory"
+            },
+            {
+              "name" : "task2",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами [0 1 2 3 4 5 6 7 8 9].\n\nРаспечатайте этот список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Найти количество четных натуральных чисел не превышающий 1234.\n\nРаспечатать это число.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "task4",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Найти среднее арифметическое натуральных чисел кратных 3 не превышающих 100.\n\nРаспечатать это число.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами [1 3 5 7 9].\n\nРаспечатайте этот список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework2",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами [1 6 11 16].\n\nРаспечатайте этот список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами [9 8 7 6 5 4 3 2 1 0].\n\nРаспечатайте этот список.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework4",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список, заполненный целыми числами [20 16 12 8 4].\n\nРаспечатайте этот список.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework5",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Создать список из навтуральных чисел меньших 100 и кратных 4. \n\nОпределить среднее арифметическое значений элементов списка.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Кортежи",
+          "task_list" : [
+            {
+              "name" : "task1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Множественное присваивание.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Словари",
+          "task_list" : [
+            {
+              "name" : "task1",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Составить словарь с информацией о себе. Информация запрашивается с клавиатуры.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "task2",
+              "files" : {
+                "task.py" : {
+                  "name" : "task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "tests/test_task.py" : {
+                  "name" : "tests/test_task.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : "import unittest\n\nfrom task import sum\n\n\n# todo: replace this with an actual test\nclass TestCase(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(sum(1, 2), 3, msg=\"adds 1 + 2 to equal 3\")\n"
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/__init__.py" : {
+                  "name" : "tests/__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Построить словарь, вычисляющую по номеру дня недели – целому числу \nот 1 до 7 – название соответствующего дня: понедельник, вторник и.т.д.\n\nДалее у пользователя запрашивается номер дня недели и печатается название дня недели.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "edu"
+            },
+            {
+              "name" : "task3",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Составим базу данных абитуриентов, поступающих в университет. \n\nИнформация о каждом абитуриенте может храниться в виде словаря с ключами \n- \"Фамилия\", \n- \"Имя\", \n- \"Количество баллов\",\n- \"День рождения\" (кортеж).\n\nВсе абитуенты должны храниться в списке.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            },
+            {
+              "name" : "homework1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Написать программу, которая запрашивает у пользователя логин и пароль.\n\nЭту информацию она сохраняет в словаре.\n",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            }
+          ],
+          "type" : "lesson"
+        },
+        {
+          "title" : "Множества",
+          "task_list" : [
+            {
+              "name" : "task1",
+              "files" : {
+                "main.py" : {
+                  "name" : "main.py",
+                  "placeholders" : [ ],
+                  "is_visible" : true,
+                  "text" : ""
+                },
+                "__init__.py" : {
+                  "name" : "__init__.py",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                },
+                "tests/output.txt" : {
+                  "name" : "tests/output.txt",
+                  "placeholders" : [ ],
+                  "is_visible" : false,
+                  "text" : ""
+                }
+              },
+              "description_text" : "Дан список целых чисел. Найти количество уникальных элементов в нем.",
+              "description_format" : "MD",
+              "feedback_link" : {
+                "link_type" : "STEPIK"
+              },
+              "task_type" : "output"
+            }
+          ],
+          "type" : "lesson"
+        }
+      ],
+      "type" : "section"
+    }
+  ],
+  "additional_files" : [
+    {
+      "name" : "lesson1/Работа с числами/README.md",
+      "placeholders" : [ ],
+      "is_visible" : true,
+      "text" : ""
+    }
+  ],
+  "version" : 11
+}
