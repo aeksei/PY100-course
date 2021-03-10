@@ -1,0 +1,9 @@
+title: PY100-course
+language: English
+summary: |-
+  Python course.
+  Created: Mar 1, 2021, 11:16:13 AM.
+programming_language: Python
+environment: unittest
+content:
+- lesson1
