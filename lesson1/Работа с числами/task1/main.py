@@ -1,6 +1,6 @@
-length = ...
-width = ...
+length = 5
+width = 15
 
-perimeter = ...
+perimeter = length * width
 
-print()
+print(perimeter)
